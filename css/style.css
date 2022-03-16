@@ -204,7 +204,19 @@ a {
   white-space: nowrap;
 }
 
-.form-button {
+input:focus {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+textarea:focus {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.button {
   background: #0b1d03;
   border-radius: 4px;
   color: white;
@@ -218,4 +230,20 @@ a {
   width: 656px;
   height: 76px;
   margin: 0px 80px 48px 48px;
+}
+
+.button:disabled,
+.button.disabled {
+  color: #fff;
+  border-color: #a0a0a0;
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+.button:disabled:hover,
+.button:disabled:focus,
+.button.disabled:hover,
+.button.disabled:focus {
+  color: #fff;
+  border-color: #a0a0a0;
+  background-color: #a0a0a0;
 }
